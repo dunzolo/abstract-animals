@@ -14,6 +14,6 @@ public class Aquila extends Animale implements iVolante{
 	public String toString() { return "(Aquila)"; }
 
 	@Override
-	public void vola() { System.out.println("Sto volando!"); }
+	public String vola() { return "Sto volando!"; }
 
 }

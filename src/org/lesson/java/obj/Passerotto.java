@@ -11,7 +11,7 @@ public class Passerotto extends Animale implements iVolante{
 	public String mangia() { return "Foglie"; }
 	
 	@Override
-	public void vola() { System.out.println("Sto volando!"); }
+	public String vola() { return "Sto volando!"; }
 	
 	@Override
 	public String toString() { return "(Passerotto)"; }

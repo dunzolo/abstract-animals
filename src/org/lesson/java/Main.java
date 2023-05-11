@@ -32,7 +32,7 @@ public class Main {
 			}else if(animale instanceof iVolante) {
 				
 				iVolante av = (iVolante) animale;
-				animalManager.faiVolare(av);
+				System.out.println(animalManager.faiVolare(av));
 				
 			} else {
 				
