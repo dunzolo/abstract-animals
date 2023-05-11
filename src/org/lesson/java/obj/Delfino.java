@@ -1,6 +1,8 @@
 package org.lesson.java.obj;
 
-public class Delfino extends Animale{
+import org.lesson.java.interf.iNuotante;
+
+public class Delfino extends Animale implements iNuotante{
 
 	@Override
 	public String verso() { return "Ultrasuono"; }
@@ -9,8 +11,9 @@ public class Delfino extends Animale{
 	public String mangia() { return "Pesci"; }
 	
 	@Override
-	public String toString() {
-		return "(Delfino)";
-	}
+	public String toString() { return "(Delfino)"; }
+
+	@Override
+	public void nuota() { System.out.println("Sto nuotando!");}
 
 }

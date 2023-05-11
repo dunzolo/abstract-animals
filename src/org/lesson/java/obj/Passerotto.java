@@ -1,6 +1,8 @@
 package org.lesson.java.obj;
 
-public class Passerotto extends Animale{
+import org.lesson.java.interf.iVolante;
+
+public class Passerotto extends Animale implements iVolante{
 
 	@Override
 	public String verso() { return "Cinguetta"; }
@@ -9,8 +11,8 @@ public class Passerotto extends Animale{
 	public String mangia() { return "Foglie"; }
 	
 	@Override
-	public String toString() {
-		return "(Passerotto)";
-	}
-
+	public void vola() { System.out.println("Sto volando!"); }
+	
+	@Override
+	public String toString() { return "(Passerotto)"; }
 }

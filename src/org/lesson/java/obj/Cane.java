@@ -1,6 +1,8 @@
 package org.lesson.java.obj;
 
-public class Cane  extends Animale{
+import org.lesson.java.interf.iNuotante;
+
+public class Cane extends Animale{
 
 	@Override
 	public String verso() { return "Abbaia"; }
@@ -9,8 +11,6 @@ public class Cane  extends Animale{
 	public String mangia() { return "Croccantini"; }
 	
 	@Override
-	public String toString() {
-		return "(Cane)";
-	}
-	
+	public String toString() { return "(Cane)"; }
+
 }
